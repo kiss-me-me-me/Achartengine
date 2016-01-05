@@ -92,5 +92,4 @@ private void initLineChart() {
 		LineData data = new LineData(xVals, dataSets);
 		lineChart.setData(data);
 	}
-
 }
