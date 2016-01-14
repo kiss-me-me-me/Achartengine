@@ -12,7 +12,12 @@ import com.sfpay.linechart.data.LineDataSet;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-
+/**
+ * @version 1.0.3
+ * @description: 确认收货
+ * @date: 2015/11/30
+ * @author: xiefeng
+ */
 public class MainActivity extends Activity {
 
 	private LineChart lineChart;
@@ -24,11 +29,11 @@ public class MainActivity extends Activity {
         initLineChart();
         setData();
     }
-    
+/**
+  * 画曲线图
+  */
 private void initLineChart() {
-		
-		lineChart = (LineChart) findViewById(R.id.line_chart);
-
+	lineChart = (LineChart) findViewById(R.id.line_chart);
         lineChart.setHighlightEnabled(true);
         lineChart.setTouchEnabled(true);
         lineChart.setDragEnabled(true);
@@ -47,7 +52,9 @@ private void initLineChart() {
         leftAxis.setLabelCount(6);
         leftAxis.setStartAtZero(false);
 	}
-	
+	/**
+	 * 处理数据
+	 */
 	private void setData() {
 		String[] dateTime = {"01-01","01-02","01-03","01-04","01-05","01-06","01-07"};//日期
 //		float[] seven = {1.00f,2.00f,9.00f,4.00f,1.00f,6.00f,3.00f};//日期
